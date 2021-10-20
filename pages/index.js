@@ -21,7 +21,33 @@ export default function Home() {
 			</Head>
 
 			<body>
-				<main class='font-firago hyphens-manual bg-gray-250 print:bg-white pb-12 print:pb-0 pt-12 print:pt-0 '>
+				<main class='font-firago hyphens-manual bg-gray-250 print:bg-white pb-12 print:pb-0 '>
+					{/* <!-- Language and Print Buttons --> */}
+					<section class='flex flex-row justify-center pb-8 print:pb-0 print:hidden'>
+						<div class='flex flex-row justify-between items-center bg-white text-lg text-gray-500 shadow-xl'>
+							<a href='#'>
+								<div class=' px-3 py-1 font-medium'> en </div>
+							</a>
+							<a href='#'>
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
+									class='h-5 w-5 '
+									fill='none'
+									viewBox='0 0 24 24'
+									stroke='currentColor'>
+									<path
+										stroke-linecap='round'
+										stroke-linejoin='round'
+										stroke-width='2'
+										d='M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z'
+									/>
+								</svg>
+							</a>
+							<a href='#'>
+								<div class='px-3 py-1 '> nl </div>
+							</a>
+						</div>
+					</section>
 					{/* <!-- Page --> */}
 					<div class='max-w-2xl p-6 mx-auto bg-white shadow-xl page  print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16'>
 						{/* <!-- Name --> */}
@@ -41,33 +67,22 @@ export default function Home() {
 								<h1 class='mb-0 text-2xl font-bold text-gray-750'>
 									Riekus Ritskes
 								</h1>
-								{/* <!--Job Title---------------------------------------------------------------------------------------------------------> */}
+								{/* <!--Job Title--> */}
 								<h2 class='m-0 text-xl font-semibold leading-snug text-gray-700'>
 									Business Development
 								</h2>
-								{/* <!--Location ---------------------------------------------------------------------------------------------------------> */}
+								{/* <!--Location --> */}
 								<h3 class='m-0 mt-0 font-semibold leading-snug text-md text-gray-550'>
 									Rotterdam, The Netherlands
 								</h3>
 							</div>
 
+							{/* <!--Profile Picture --> */}
 							<div class=' flex flex-1 justify-end items-center '>
 								<div class=' mr-1 md:mr-16'>
 									<div class='h-20 w-20 md:h-24 md:w-24 shadow-sm rounded-md '>
-										<Image
-											src={profilePic}
-											// layout='fill'
-											className=' rounded-md '
-											alt='me'
-										/>
+										<Image src={profilePic} className=' rounded-md ' alt='me' />
 									</div>
-									{/* <div class='border-4 border-gray-150 '>
-										<div
-											class='bg-cover h-24 w-24  rounded-sm border-4 border-gray-300 '
-											style={{
-												backgroundImage: `url("/profile.jpg")`,
-											}}></div>
-									</div> */}
 								</div>
 							</div>
 						</header>
@@ -122,18 +137,18 @@ export default function Home() {
 														↗
 													</span>
 												</a>
-												<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-													<span class='mr-9 text-lg font-semibold text-gray-700  leading-snugish'>
-														DOB:
-													</span>
-													17-03-1988
-												</li>
-												<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-													<span class='mr-6 text-lg font-semibold text-gray-700  leading-snugish'>
-														Origin:
-													</span>
-													Dutch
-												</li>
+											</li>
+											<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
+												<span class='mr-9 text-lg font-semibold text-gray-700  leading-snugish'>
+													DOB:
+												</span>
+												17-03-1988
+											</li>
+											<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
+												<span class='mr-6 text-lg font-semibold text-gray-700  leading-snugish'>
+													Origin:
+												</span>
+												Dutch
 											</li>
 										</ul>
 									</section>
@@ -494,6 +509,9 @@ export default function Home() {
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
 												CAD
+											</li>
+											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
+												IELTS 8.0
 											</li>
 										</ul>
 									</div>
