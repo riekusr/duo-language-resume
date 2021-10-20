@@ -52,18 +52,21 @@ export default function Home() {
 
 							<div class=' flex flex-1 justify-end items-center'>
 								<div class=' mr-20  '>
-									{/* <Image
-										src={profilePic}
-										// layout='fill'
-										className=' '
-										alt='me'
-									/> */}
-
-									<div
-										class='bg-cover h-24 w-24 rounded-full border-2 border-gray-750 shadow-sm'
-										style={{
-											backgroundImage: `url("/profile.jpg")`,
-										}}></div>
+									<div class='h-24 w-24 shadow-md rounded-xl'>
+										<Image
+											src={profilePic}
+											// layout='fill'
+											className=' rounded-xl'
+											alt='me'
+										/>
+									</div>
+									{/* <div class='border-4 border-gray-150 '>
+										<div
+											class='bg-cover h-24 w-24  rounded-sm border-4 border-gray-300 '
+											style={{
+												backgroundImage: `url("/profile.jpg")`,
+											}}></div>
+									</div> */}
 								</div>
 							</div>
 						</header>
