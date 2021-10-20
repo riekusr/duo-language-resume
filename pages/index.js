@@ -51,9 +51,9 @@ export default function Home() {
 								</h3>
 							</div>
 
-							<div class=' flex flex-1 justify-end items-center'>
-								<div class=' mr-20  '>
-									<div class='h-24 w-24 shadow-sm rounded-md '>
+							<div class=' flex flex-1 justify-end items-center '>
+								<div class=' mr-1 md:mr-16'>
+									<div class='h-20 w-20 md:h-24 md:w-24 shadow-sm rounded-md '>
 										<Image
 											src={profilePic}
 											// layout='fill'
@@ -229,7 +229,7 @@ export default function Home() {
 
 							<section class='mt-8 first:mt-0'>
 								{/* <!-- To keep in the same column --> */}
-								<div class='break-inside-avoid'>
+								<div class='border-b-2 md:border-none break-inside-avoid'>
 									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
 										EDUCATION
 									</h2>
@@ -244,34 +244,34 @@ export default function Home() {
 											</p>
 										</header>
 									</section>
+
+									<section class='mb-4.5 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												Scheepvaart en Transport College
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												2005 – 2008 | Maritime Technical Specialist
+											</p>
+										</header>
+									</section>
+
+									<section class='mb-2 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												Krimpenerwaard College
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												2000 – 2005 | VMBO-T
+											</p>
+										</header>
+									</section>
 								</div>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Scheepvaart en Transport College
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											2005 – 2008 | Maritime Technical Specialist
-										</p>
-									</header>
-								</section>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Krimpenerwaard College
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											2000 – 2005 | VMBO-T
-										</p>
-									</header>
-								</section>
 							</section>
 
 							<section class='mt-8 first:mt-0'>
 								{/* <!-- To keep in the same column --> */}
-								<div class='break-inside-avoid'>
+								<div class='border-b-2 break-inside-avoid'>
 									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
 										PROJECTS
 									</h2>
@@ -298,107 +298,108 @@ export default function Home() {
 											API's) is achieved. ** Cancelled **
 										</p>
 									</section>
+									{/* </div> */}
+
+									<section class='mb-4.5 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												<a
+													href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
+													class='group'>
+													FiberStand.com
+													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+														↗
+													</span>
+												</a>
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												Since 2018 | NextJS CAD
+											</p>
+										</header>
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											Hardware product. <br />
+											Ergonomic carbon fiber laptopstand for travelers.
+										</p>
+									</section>
+
+									<section class='mb-4.5 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												<a
+													href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
+													class='group'>
+													AustralianPrivacy.org
+													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+														↗
+													</span>
+												</a>
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												Since 2018 | JS PSQL
+											</p>
+										</header>
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											Notifying Australian Citizens of password & data leaks.
+										</p>
+									</section>
+
+									<section class='mb-4.5 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												<a
+													href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
+													class='group'>
+													AutoSucces.nl
+													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+														↗
+													</span>
+												</a>
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												2017 - 2018 | Python MYSQL JS
+											</p>
+										</header>
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											Automotive Analytics SaaS. Software that scrapes, indexes
+											and processes listing pages of automtoive resellers.
+											<br /> This data was to be sold to car dealers to help
+											identify trends, opportunities and track competitors.
+										</p>
+									</section>
+
+									<section class='mb-4.5 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												PartOffer.com
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												2013 – 2014 | Python MYSQL JS
+											</p>
+										</header>
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											Automotive parts aggregator website. Supplying the Dutch
+											automotive parts ecosystem with used parts from suppliers
+											based in Germany, Poland and Czech. Automated scraping
+											from ebay and relisting on 'marktplaats.nl'.
+										</p>
+									</section>
+
+									<section class='mb-2 break-inside-avoid'>
+										<header>
+											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+												Fiximo.com | A manual for everything
+											</h3>
+											<p class='leading-normal text-md text-gray-650'>
+												2011 - 2012 | PHP MYSQL JS
+											</p>
+										</header>
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											Aspired to be the biggest provider of online DIY repair
+											manuals. Similair to what ifixit.com has become. Moved on
+											due to team inbalances.
+										</p>
+									</section>
 								</div>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											<a
-												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
-												class='group'>
-												FiberStand.com
-												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-													↗
-												</span>
-											</a>
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											Since 2018 | NextJS CAD
-										</p>
-									</header>
-									<p class='mt-1 text-md text-gray-700 leading-normal'>
-										Hardware product. <br />
-										Ergonomic carbon fiber laptopstand for travelers.
-									</p>
-								</section>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											<a
-												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
-												class='group'>
-												AustralianPrivacy.org
-												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-													↗
-												</span>
-											</a>
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											Since 2018 | JS PSQL
-										</p>
-									</header>
-									<p class='mt-1 text-md text-gray-700 leading-normal'>
-										Notifying Australian Citizens of password & data leaks.
-									</p>
-								</section>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											<a
-												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
-												class='group'>
-												AutoSucces.nl
-												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-													↗
-												</span>
-											</a>
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											2017 - 2018 | Python MYSQL JS
-										</p>
-									</header>
-									<p class='mt-1 text-md text-gray-700 leading-normal'>
-										Automotive Analytics SaaS. Software that scrapes, indexes
-										and processes listing pages of automtoive resellers.
-										<br /> This data was to be sold to car dealers to help
-										identify trends, opportunities and track competitors.
-									</p>
-								</section>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											PartOffer.com
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											2013 – 2014 | Python MYSQL JS
-										</p>
-									</header>
-									<p class='mt-1 text-md text-gray-700 leading-normal'>
-										Automotive parts aggregator website. Supplying the Dutch
-										automotive parts ecosystem with used parts from suppliers
-										based in Germany, Poland and Czech. Automated scraping from
-										ebay and relisting on 'marktplaats.nl'.
-									</p>
-								</section>
-
-								<section class='mb-4.5 break-inside-avoid'>
-									<header>
-										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Fiximo.com | A manual for everything
-										</h3>
-										<p class='leading-normal text-md text-gray-650'>
-											2011 - 2012 | PHP MYSQL JS
-										</p>
-									</header>
-									<p class='mt-1 text-md text-gray-700 leading-normal'>
-										Aspired to be the biggest provider of online DIY repair
-										manuals. Similair to what ifixit.com has become. Moved on
-										due to team inbalances.
-									</p>
-								</section>
 							</section>
 
 							<section class='mt-8 first:mt-0'>
