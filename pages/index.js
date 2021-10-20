@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import profilePic from '../public/profile.jpg';
+import profilePicT from '../public/profiletrans.jpg';
 
 export default function Home() {
 	const penis = 'ghey';
@@ -52,11 +53,11 @@ export default function Home() {
 
 							<div class=' flex flex-1 justify-end items-center'>
 								<div class=' mr-20  '>
-									<div class='h-24 w-24 shadow-md rounded-xl'>
+									<div class='h-24 w-24 shadow-sm rounded-md '>
 										<Image
 											src={profilePic}
 											// layout='fill'
-											className=' rounded-xl'
+											className=' rounded-md '
 											alt='me'
 										/>
 									</div>
@@ -80,7 +81,7 @@ export default function Home() {
 								<div class='break-inside-avoid'>
 									<section class='pb-2  border-b-2 break-inside-avoid'>
 										<ul class='list-inside pr-7'>
-											<li class=' leading-normal text-gray-800 transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700 print:'>
+											<li class=' leading-normal text-gray-800 transition duration-100 ease-in  text-md hover:text-gray-700 print:'>
 												<a href='https://riekus.io' class='group'>
 													<span class='mr-2 text-lg font-semibold text-gray-700  leading-snugish'>
 														Website:
@@ -92,17 +93,6 @@ export default function Home() {
 												</a>
 											</li>
 
-											<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-												<a href='mailto:riekus@pm.me' class='group'>
-													<span class='mr-10 text-lg font-semibold text-gray-700  leading-snugish'>
-														DOB:
-													</span>
-													17-03-1988
-													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-														↗
-													</span>
-												</a>
-											</li>
 											<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
 												<a href='mailto:riekus@pm.me' class='group'>
 													<span class='mr-8 text-lg font-semibold text-gray-700  leading-snugish'>
@@ -132,13 +122,25 @@ export default function Home() {
 														↗
 													</span>
 												</a>
+												<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
+													<span class='mr-9 text-lg font-semibold text-gray-700  leading-snugish'>
+														DOB:
+													</span>
+													17-03-1988
+												</li>
+												<li class=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
+													<span class='mr-6 text-lg font-semibold text-gray-700  leading-snugish'>
+														Origin:
+													</span>
+													Dutch
+												</li>
 											</li>
 										</ul>
 									</section>
 								</div>
 							</section>
 							{/* <!--Summary ----------------------> */}
-							<section class='pb-2 pb-4 mt-1 border-b-4 first:mt-0'>
+							<section class=' p2-4 mt-1 border-b-2 first:mt-0'>
 								{/* <!-- To keep in the same column --> */}
 								<div class='break-inside-avoid'>
 									<h2 class='mb-2 text-lg font-bold tracking-widest text-gray-700  print:font-normal'>
@@ -155,68 +157,10 @@ export default function Home() {
 									</section>
 								</div>
 							</section>
-							{/* 
-          <!-- <section class="mt-8 first:mt-0"> -->
-          <!-- To keep in the same column -->
-          <!-- <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                ABOUT ME
-              </h2>
 
-              <section class="mb-4.5 break-inside-avoid">
-                <header>
-                  <h3 class="text-lg font-semibold leading-snug text-gray-700">
-                    User Interface Designer
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">Since 2010</p>
-                </header>
-                <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                  Minimal and formal résumé website template for print,
-                  mo&shy;bile, and desktop. The proportions are the same on the
-                  screen and paper. Built with amazing
-                  <a
-                    class="transition duration-100 ease-in rounded-lg hover:bg-gray-150"
-                    href="https://tailwindcss.com/"
-                    >Tailwind CSS&nbsp;°</a
-                  >.
-                </p>
-              </section>
-            </div> --> */}
-							{/* 
-          <section class="mb-4.5 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold leading-snug text-gray-700">
-                  Front-End Developer
-                </h3>
-                <p class="leading-normal text-md text-gray-650">Since 2013</p>
-              </header>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                “docs/index.html” is the main content file. By copying HTML: add
-                pages, sec&shy;tions, subsection, and other parts.
-              </p>
-              <p class="mt-2.1 text-md text-gray-700 leading-normal">
-                <span class="font-medium text-gray-600 print:text-black"
-                  >Important:</span
-                >
-                Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns. Too much content on one page will break the page in the form of
-                additional columns.
-              </p>
-            </section> */}
-							{/* </section> --> */}
+							{/* <!-- EXPERIENCE--> */}
 
-							<section class='mt-8 first:mt-0'>
+							<section class='mt-8 first:mt-0 border-b-2'>
 								{/* <!-- To keep in the same column --> */}
 								<div class='break-inside-avoid'>
 									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
@@ -226,17 +170,21 @@ export default function Home() {
 									<section class='mb-4.5 break-inside-avoid'>
 										<header>
 											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-												WebPraktikos Inc.
+												ARB 4x4 Accessoiries - Sydney AU
 											</h3>
 											<p class='leading-normal text-md text-gray-650'>
-												Jun 2018 – Present | Web Developer
+												Feb 2018 – Sep 2020 | Sales & Support
 											</p>
 										</header>
 										<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-											Built doner pork chop &bull; Served salmon, cream soft
+											{/* Built doner pork chop &bull; Served salmon, cream soft
 											cheese, and brisket &bull; Acted 55% pork chop &bull;
 											Filled burgdoggen & frankfurter strip steak with 90%
-											burger patties and broth
+											burger patties and broth */}
+											Responsible for sales and customer experience at this
+											leading Australian 4x4 brand. Duties consisted of finding
+											new business, upselling existing customers, managing
+											processes and product advising.
 										</p>
 									</section>
 								</div>
@@ -244,56 +192,38 @@ export default function Home() {
 								<section class='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Mammoth GmbH
+											E.J. Rooy Automotive - Krimpen NL
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											Feb 2017 – Apr 2018 | Android Developer
+											Feb 2008– Apr 2017 | Sales Manager
 										</p>
 									</header>
-									<ul class=''>
-										<li class='mt-2.1 text-md text-gray-700 leading-normal'>
-											<span class='absolute   -ml-3    sm:-ml-3.2  select-none     transform       -translate-y-px'>
-												›
-											</span>
-											Cooked shrimps for 2 to 3 minutes per side, or until
-											opaque; then, transfered to a serving dish with limon
-										</li>
-										<li class='mt-2.1 text-md text-gray-700 leading-normal'>
-											<span class='absolute   -ml-3    sm:-ml-3.2  select-none     transform       -translate-y-px'>
-												›
-											</span>
-											Roasted a pig, turning frequently, until meat reached
-											160°F in the thickest part of the shoulder or thigh
-										</li>
-									</ul>
+									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
+										B2B Sales manager responsible for sales targets and 2 sales
+										associates in the wholesale automotive industry.
+									</p>
+									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
+										Duties consisted of exploring new business, managing
+										existing key clients and streamlining sales, marketing and
+										communication processes.
+									</p>
 								</section>
 
-								<section class='mb-4.5 break-inside-avoid'>
+								<section class='mb-2 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Exquisite Systems d.o.o.
+											van Oord - Dubai UA
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											May 2015 – Dec 2016 | Software QA Specialist
+											Feb 2007– Dec 2007 | Technical Apprentice
 										</p>
 									</header>
-									<ul class=''>
-										<li class='mt-2.1 text-md text-gray-700 leading-normal'>
-											<span class='absolute   -ml-3    sm:-ml-3.2  select-none     transform       -translate-y-px'>
-												›
-											</span>
-											Made stockfish, which is unsalted fish, usully cod, dried
-											by cold air and wind on wooden racks on the foreshore
-										</li>
-										<li class='mt-2.1 text-md text-gray-700 leading-normal'>
-											<span class='absolute   -ml-3    sm:-ml-3.2  select-none     transform       -translate-y-px'>
-												›
-											</span>
-											Preserved meat without salt by removing fat, cutting it
-											into very thin strips and drying it in the sun or by a
-											fire.
-										</li>
-									</ul>
+									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
+										van Oord is the industry leader in dredging and martime
+										ingenuity. Hired straight out of school for my
+										apprenticeship. Worked on a cutter suction dredger creating
+										the islands of the prestige project 'the world' in Dubai.
+									</p>
 								</section>
 							</section>
 
@@ -307,10 +237,10 @@ export default function Home() {
 									<section class='mb-4.5 break-inside-avoid'>
 										<header>
 											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-												Graz University of Technology
+												Zadkine
 											</h3>
 											<p class='leading-normal text-md text-gray-650'>
-												2014 – 2015 | Master's Degree in Chemistry
+												2008 – 2010 | Automotive Electronics Specialist
 											</p>
 										</header>
 									</section>
@@ -319,10 +249,10 @@ export default function Home() {
 								<section class='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Vienna University of Technology
+											Scheepvaart en Transport College
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											2010 – 2013 | Bachelor’s Degree in Biology
+											2005 – 2008 | Maritime Technical Specialist
 										</p>
 									</header>
 								</section>
@@ -330,10 +260,10 @@ export default function Home() {
 								<section class='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Vienna University of Technology
+											Krimpenerwaard College
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											2010 – 2013| Bachelor’s Degree in Chemistry
+											2000 – 2005 | VMBO-T
 										</p>
 									</header>
 								</section>
@@ -352,21 +282,20 @@ export default function Home() {
 												<a
 													href='https://github.com/WebPraktikos/universal-resume'
 													class='group'>
-													Universal Resume
+													Spur.to
 													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
 														↗
 													</span>
 												</a>
 											</h3>
 											<p class='leading-normal text-md text-gray-650'>
-												Since 2019 | HTML CSS
+												Since 2020 | NextJS Dart
 											</p>
 										</header>
-										<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-											Good design is as little design as possible. Less, but
-											better — because it concentrates on the essential aspects,
-											and the pro&shy;ducts are not burdened with
-											non-essentials.
+										<p class='mt-1 text-md text-gray-700 leading-normal'>
+											A love child of GoFundMe.com and Zapier.com. A platform to
+											raise funds when an actual measurable goal (through vendor
+											API's) is achieved. ** Cancelled **
 										</p>
 									</section>
 								</div>
@@ -377,52 +306,97 @@ export default function Home() {
 											<a
 												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
 												class='group'>
-												tailwindcss-rich-docs
+												FiberStand.com
 												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											2017 | JavaScript
+											Since 2018 | NextJS CAD
 										</p>
 									</header>
-									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-										Good design is long-lasting. It avoids being fashionable and
-										therefore never appears antiquated.
-										<br />
-										Good design is honest. It does not make a product more
-										innovative, powerful or valuable than it really is.
+									<p class='mt-1 text-md text-gray-700 leading-normal'>
+										Hardware product. <br />
+										Ergonomic carbon fiber laptopstand for travelers.
 									</p>
 								</section>
 
 								<section class='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Third One
+											<a
+												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
+												class='group'>
+												AustralianPrivacy.org
+												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+													↗
+												</span>
+											</a>
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											2013 – 2014 | Vue
+											Since 2018 | JS PSQL
 										</p>
 									</header>
-									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-										Good design is innovative. Technological development is
-										always offering new opportunities for innovative design.
+									<p class='mt-1 text-md text-gray-700 leading-normal'>
+										Notifying Australian Citizens of password & data leaks.
 									</p>
 								</section>
 
 								<section class='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-											Fantastic Project
+											<a
+												href='https://github.com/WebPraktikos/tailwindcss-rich-docs'
+												class='group'>
+												AutoSucces.nl
+												<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+													↗
+												</span>
+											</a>
 										</h3>
 										<p class='leading-normal text-md text-gray-650'>
-											2012 | JavaScript
+											2017 - 2018 | Python MYSQL JS
 										</p>
 									</header>
-									<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-										Strip steak tail capicola alcatra ground round tenderloin
-										ar. Venison tri-tip porchetta, brisket tenderloin pig beef.
+									<p class='mt-1 text-md text-gray-700 leading-normal'>
+										Automotive Analytics SaaS. Software that scrapes, indexes
+										and processes listing pages of automtoive resellers.
+										<br /> This data was to be sold to car dealers to help
+										identify trends, opportunities and track competitors.
+									</p>
+								</section>
+
+								<section class='mb-4.5 break-inside-avoid'>
+									<header>
+										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+											PartOffer.com
+										</h3>
+										<p class='leading-normal text-md text-gray-650'>
+											2013 – 2014 | Python MYSQL JS
+										</p>
+									</header>
+									<p class='mt-1 text-md text-gray-700 leading-normal'>
+										Automotive parts aggregator website. Supplying the Dutch
+										automotive parts ecosystem with used parts from suppliers
+										based in Germany, Poland and Czech. Automated scraping from
+										ebay and relisting on 'marktplaats.nl'.
+									</p>
+								</section>
+
+								<section class='mb-4.5 break-inside-avoid'>
+									<header>
+										<h3 class='text-lg font-semibold leading-snug text-gray-700'>
+											Fiximo.com | A manual for everything
+										</h3>
+										<p class='leading-normal text-md text-gray-650'>
+											2011 - 2012 | PHP MYSQL JS
+										</p>
+									</header>
+									<p class='mt-1 text-md text-gray-700 leading-normal'>
+										Aspired to be the biggest provider of online DIY repair
+										manuals. Similair to what ifixit.com has become. Moved on
+										due to team inbalances.
 									</p>
 								</section>
 							</section>
@@ -437,29 +411,57 @@ export default function Home() {
 									<section class='mb-4.5 break-inside-avoid'>
 										<header>
 											<h3 class='text-lg font-semibold leading-snug text-gray-700'>
-												JavaScript
+												Programming
 											</h3>
-											<p class='leading-normal text-md text-gray-650'>
-												Middle Level
-											</p>
 										</header>
-										<p class='mt-2.1 text-md text-gray-700 leading-normal'>
-											Good parts: pure function, higher-order functions, factory
-											functions, composition. Bad parts: inheritance, this, new.
-										</p>
 										<div class='my-3.2 last:pb-1.5'>
 											<ul class='flex flex-wrap text-md leading-relaxed  -mr-1.6 -mb-1.6'>
 												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-													ES6
+													Javascript
 												</li>
 												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-													Vue
+													NextJS
 												</li>
 												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-													Functional Programming
+													React
 												</li>
 												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
 													Node
+												</li>
+
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													MYSQL
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Postgres
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Firebase
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Python
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Django
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Flask
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Dart
+												</li>
+
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Flutter
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Git
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Docker
+												</li>
+												<li class='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													Linux
 												</li>
 											</ul>
 										</div>
@@ -475,43 +477,31 @@ export default function Home() {
 									<div class='my-3.2 last:pb-1.5'>
 										<ul class='flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6'>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												CSS
+												SalesForce
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Rust
+												Marketing
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Git
+												Sales
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Go
+												Psychology
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Linux Server
+												Adobe Suite
 											</li>
 											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												UI Design
-											</li>
-											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Photoshop
-											</li>
-											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Illustrator
-											</li>
-											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Figma
-											</li>
-											<li class='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-												Typography
+												CAD
 											</li>
 										</ul>
 									</div>
 								</section>
 							</section>
 
-							<section class='mt-8 first:mt-0'>
-								{/* <!-- To keep in the same column --> */}
-								<div class='break-inside-avoid'>
+							{/* <section class='mt-8 first:mt-0'> */}
+							{/* <!-- To keep in the same column --> */}
+							{/* <div class='break-inside-avoid'>
 									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
 										CONTACT
 									</h2>
@@ -543,7 +533,7 @@ export default function Home() {
 										</ul>
 									</section>
 								</div>
-							</section>
+							</section> */}
 						</div>
 						{/* <!-- end Column --> */}
 					</div>
