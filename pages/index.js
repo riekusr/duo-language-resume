@@ -14,7 +14,7 @@ export default function Home() {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     {/* <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> --> */}
     {/* <link href="./build.css" rel="stylesheet" /> */}
-    <title>Riekus Ritskes -Resume </title>
+    <title>Riekus Ritskes - 2   Resume </title>
   </Head>
 
   <body>
