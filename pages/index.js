@@ -196,7 +196,7 @@ export default function Home({ lang = 'en' }) {
 								<section className='mb-2 break-inside-avoid'>
 									<p className='mt-2 leading-normal text-gray-700 text-md'>
 										{enlang
-											? `Self starter with a knack for sales and a skillset in 
+											? `Self starter with a knack for sales and a skill set in 
 										programming and IT. Always learning and progressing with an
 										agile mindset. Looking to break into the Salesforce
 										ecosystem for new challenges.`
@@ -221,7 +221,7 @@ export default function Home({ lang = 'en' }) {
 								<section className='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 className='text-lg font-semibold leading-snug text-gray-700'>
-											ARB 4x4 Accessoiries - Sydney AU
+											ARB 4x4 Accessories - Sydney AU
 										</h3>
 										<p className='leading-normal text-md text-gray-650'>
 											Feb 2018 – Sep 2020 | Sales & Support
@@ -232,7 +232,7 @@ export default function Home({ lang = 'en' }) {
 											? `
 										Responsible for sales and customer experience at this
 										leading Australian 4x4 brand. Duties consisted of finding
-										new business, upselling existing customers, managing
+										new business, up-selling existing customers, managing
 										processes and product advising.`
 											: `
                       Verantwoordelijk voor de verkoop en klant ervaring bij deze Australische
@@ -286,7 +286,7 @@ export default function Home({ lang = 'en' }) {
 								<p className='mt-2.1 text-md text-gray-700 leading-normal'>
 									{enlang
 										? `
-									van Oord is the industry leader in dredging and martime
+									van Oord is the industry leader in dredging and maritime
 									ingenuity. Hired straight out of school for my apprenticeship.
 									Worked on a cutter suction dredger creating the islands of the
 									prestige project 'the world' in Dubai.`
@@ -370,7 +370,7 @@ export default function Home({ lang = 'en' }) {
 											? `
 										A love child of GoFundMe.com and Zapier.com. A platform to
 										raise funds when an actual measurable goal (through vendor
-										API's) is achieved. ** Cancelled **`
+										API's) is achieved. ** Canceled **`
 											: `
                     De liefdes baby van GoFundMe.com and Zapier.com. Een platform waar je 
                     conditioneel geld kunt inzamelen dmv API kpopelingen. 
@@ -401,7 +401,7 @@ export default function Home({ lang = 'en' }) {
 										{enlang
 											? `
 						
-										Ergonomic carbon fiber laptopstand for travelers.`
+										Ergonomic carbon fiber laptop stand for travelers.`
 											: `
                     
                     Ergonomische laptop standaard voor reizigers. 
@@ -455,11 +455,11 @@ export default function Home({ lang = 'en' }) {
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
 										{enlang
-											? `Automotive Analytics SaaS. Software that scrapes, indexes
-										and processes listing pages of automtoive resellers.
+											? `Automotive Analytic SaaS. Software that scrapes, indexes
+										and processes listing pages of automotive resellers.
 										his data was to be sold to car dealers to help
 										identify trends, opportunities and track competitors.`
-											: `Automotive Analytics Saas. Software dat voorraad pagina's van autobedrijven
+											: `Automotive Analytic Saas. Software dat voorraad pagina's van autobedrijven
                     schraapt, indexeert en analyseert. Helpt klanten bij het vinden van trends en het prestaties
                     van concurrenten`}
 									</p>
@@ -509,7 +509,7 @@ export default function Home({ lang = 'en' }) {
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
 										{enlang
 											? `
-										Platform where DIYers write manuals for repairs, affiliate comission on tools
+										Platform where DIYers write manuals for repairs, affiliate commission on tools
                     and parts are shared with the content creators`
 											: `
                     Platform waar DIY-ers handleidingen kunnen plaatsen voor
