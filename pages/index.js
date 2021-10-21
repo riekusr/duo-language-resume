@@ -105,68 +105,83 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --------------------------------------------------------------------------> */}
 							<div className='break-inside-avoid'>
 								<section className='pb-2  border-b-2 print:border-b-[2px] break-inside-avoid'>
-									<ul className='list-inside pr-7'>
-										<li className=' leading-normal text-gray-800 transition duration-100 ease-in  text-md hover:text-gray-700 print:'>
-											<a href='https://riekus.io' className='group'>
-												<span className='mr-2 text-lg font-semibold text-gray-700  leading-snugish'>
-													Website:
-												</span>
+									<table className='leading-normal transition duration-100 ease-in  text-md text-gray-550 '>
+										<tr
+											className='hover:text-gray-700 text-gray-700 cursor-pointer group'
+											onClick={() => window.open('https://riekus.io')}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
+												Website:
+											</td>
+											<td>
 												riekus.io
 												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 group-hover:text-gray-700 '>
 													↗
 												</span>
-											</a>
-										</li>
-
-										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-											<a href='mailto:me@riekus.io' className='group'>
-												<span className='mr-8 text-lg font-semibold text-gray-700  leading-snugish'>
-													Email:
-												</span>
+											</td>
+										</tr>
+										<tr
+											className='hover:text-gray-700 cursor-pointer group'
+											onClick={() => window.open('mailto:me@riekus.io')}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
+												Email:
+											</td>
+											<td>
 												me@riekus.io
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
+												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 group-hover:text-gray-700 '>
 													↗
 												</span>
-											</a>
-										</li>
-										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-											<a href='tel:+31645260830'>
-												<span
-													className={`${
-														enlang ? 'mr-5' : 'mr-12'
-													} text-lg font-semibold text-gray-700  leading-snugish`}>
-													{enlang ? 'Phone' : 'Tel.'}
-												</span>
+											</td>
+										</tr>
+										<tr
+											className='hover:text-gray-700 cursor-pointer group'
+											onClick={() => window.open('tel:+31645260830')}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
+												Phone:
+											</td>
+											<td>
 												+31 6 4526 0830
-											</a>
-										</li>
-										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-											<a
-												href='https://github.com/RiekusR'
-												className='group'
-												target='_blank'>
-												<span className='mr-5 text-lg font-semibold text-gray-700  leading-snugish'>
-													Github:
-												</span>
-												RiekusR
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
+												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 group-hover:text-gray-700 '>
 													↗
 												</span>
-											</a>
-										</li>
-										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-											<span className='mr-9 text-lg font-semibold text-gray-700  leading-snugish'>
-												{enlang ? 'DOB' : 'GEB'}
-											</span>
-											17-03-1988
-										</li>
-										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
-											<span className='mr-6 text-lg font-semibold text-gray-700  leading-snugish'>
+											</td>
+										</tr>
+										<tr
+											className='hover:text-gray-700 cursor-pointer group'
+											onClick={() =>
+												window.open('https://github.com/riekusr', '_blank')
+											}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
+												Github:
+											</td>
+											<td>
+												{' '}
+												RiekusR
+												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 group-hover:text-gray-700 '>
+													↗
+												</span>
+											</td>
+										</tr>
+										<tr
+											className='hover:text-gray-700'
+											onClick={() =>
+												window.open('https://github.com/riekusr', '_blank')
+											}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
+												DOB:
+											</td>
+											<td> 17-03-1988</td>
+										</tr>
+										<tr
+											className='hover:text-gray-700 '
+											onClick={() =>
+												window.open('https://github.com/riekusr', '_blank')
+											}>
+											<td className='pr-2 text-lg font-semibold text-gray-800  leading-snugish'>
 												Origin:
-											</span>
-											Dutch
-										</li>
-									</ul>
+											</td>
+											<td> Dutch</td>
+										</tr>
+									</table>
 								</section>
 							</div>
 						</section>
