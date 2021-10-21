@@ -47,20 +47,6 @@ export default function Home({ lang = 'en' }) {
 								d='M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z'
 							/>
 						</svg>
-						{/* <svg
-							onClick={(e) => window.print()}
-							xmlns='http://www.w3.org/2000/svg'
-							className='h-6 w-6 cursor-pointer'
-							fill='none'
-							viewBox='0 0 24 24'
-							stroke='currentColor'>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth={2}
-								d='M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
-							/>
-						</svg> */}
 
 						<Link href='/nl'>
 							<div
@@ -73,11 +59,11 @@ export default function Home({ lang = 'en' }) {
 					</div>
 				</section>
 				{/* <!-- Page --> */}
-				<div className='max-w-2xl p-6 mx-auto bg-white shadow-xl page  print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16'>
+				<div className='max-w-2xl p-6 mx-auto bg-white shadow-xl print:shadow-none page  print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16'>
 					{/* <!-- Name --> */}
 					<header className='flex flex-row items-center mb-8 md:mb-11 '>
 						<div
-							className='px-3 mr-5 text-logobase font-medium leading-none text-white bg-gray-600  initials-container print:bg-black'
+							className='px-3 mr-5 text-logobase font-medium leading-none text-white bg-gray-600  initials-container '
 							style={{ paddingBottom: '0.6875rem', paddingTop: '0.6875rem' }}>
 							<div
 								className='text-center initial'
@@ -118,7 +104,7 @@ export default function Home({ lang = 'en' }) {
 						<section className='pb-4 mt-4 first:mt-0'>
 							{/* <!-- To keep in the same column --------------------------------------------------------------------------> */}
 							<div className='break-inside-avoid'>
-								<section className='pb-2  border-b-2 break-inside-avoid'>
+								<section className='pb-2  border-b-2 print:border-b-[2px] break-inside-avoid'>
 									<ul className='list-inside pr-7'>
 										<li className=' leading-normal text-gray-800 transition duration-100 ease-in  text-md hover:text-gray-700 print:'>
 											<a href='https://riekus.io' className='group'>
@@ -126,7 +112,7 @@ export default function Home({ lang = 'en' }) {
 													Website:
 												</span>
 												riekus.io
-												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700 print:'>
+												<span className='inline-block font-normal text-gray-700transition duration-100 ease-in  text-gray-550 group-hover:text-gray-700 '>
 													↗
 												</span>
 											</a>
@@ -138,7 +124,7 @@ export default function Home({ lang = 'en' }) {
 													Email:
 												</span>
 												me@riekus.io
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
@@ -163,7 +149,7 @@ export default function Home({ lang = 'en' }) {
 													Github:
 												</span>
 												RiekusR
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
@@ -185,10 +171,10 @@ export default function Home({ lang = 'en' }) {
 							</div>
 						</section>
 						{/* <!--Summary ----------------------> */}
-						<section className=' p2-4 mt-1 border-b-2 first:mt-0'>
+						<section className=' p2-4 mt-1 border-b-2 print:border-b-[2px] first:mt-0'>
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
-								<h2 className='mb-2 text-lg font-bold tracking-widest text-gray-700  print:font-normal'>
+								<h2 className='mb-2 text-lg font-bold tracking-widest text-gray-700 '>
 									{enlang ? 'SUMMARY' : 'SAMENVATTING'}
 								</h2>
 
@@ -210,10 +196,10 @@ export default function Home({ lang = 'en' }) {
 
 						{/* <!-- EXPERIENCE--> */}
 
-						<section className='mt-8 first:mt-0 border-b-2'>
+						<section className='mt-8 first:mt-0 border-b-2 print:border-b-[2px]'>
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
-								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
+								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 '>
 									{enlang ? 'EXPERIENCE' : 'ERVARINGEN'}
 								</h2>
 
@@ -300,8 +286,8 @@ export default function Home({ lang = 'en' }) {
 
 						<section className='mt-8 first:mt-0'>
 							{/* <!-- To keep in the same column --> */}
-							<div className='border-b-2 md:border-none print:border-none break-inside-avoid'>
-								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
+							<div className='border-b-2 print:border-b-[2px] md:border-none print:border-none break-inside-avoid'>
+								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 '>
 									{enlang ? 'EDUCATION' : 'OPLEIDINGEN'}
 								</h2>
 
@@ -342,8 +328,8 @@ export default function Home({ lang = 'en' }) {
 
 						<section className='mt-8 first:mt-0'>
 							{/* <!-- To keep in the same column --> */}
-							<div className='border-b-2 break-inside-avoid'>
-								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
+							<div className='border-b-2 print:border-b-[2px] break-inside-avoid'>
+								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 '>
 									{enlang ? 'PROJECTS' : 'PROJECTEN'}
 								</h2>
 
@@ -355,7 +341,7 @@ export default function Home({ lang = 'en' }) {
 												className='group'
 												target='_blank'>
 												Spur.to
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
@@ -386,13 +372,13 @@ export default function Home({ lang = 'en' }) {
 												className='group'
 												target='_blank'>
 												FiberStand.com
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
 										</h3>
 										<p className='leading-normal text-md text-gray-650'>
-											Since 2018 | NextJS CAD Blender ThreeJS
+											Since 2020 | NextJS CAD Blender ThreeJS
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
@@ -416,7 +402,7 @@ export default function Home({ lang = 'en' }) {
 												className='group'
 												target='_blank'>
 												AustralianPrivacy.org
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
@@ -443,7 +429,7 @@ export default function Home({ lang = 'en' }) {
 												className='group'
 												target='_blank'>
 												AutoSucces.nl
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
@@ -472,13 +458,13 @@ export default function Home({ lang = 'en' }) {
 												className='group'
 												target='_blank'>
 												PartOffer.com
-												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
+												<span className='inline-block font-normal transition duration-100 ease-in  text-gray-550  group-hover:text-gray-700'>
 													↗
 												</span>
 											</a>
 										</h3>
 										<p className='leading-normal text-md text-gray-650'>
-											2013 – 2014 | Python MYSQL JS
+											2015 – 2017 | Python MYSQL JS
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
@@ -523,7 +509,7 @@ export default function Home({ lang = 'en' }) {
 						<section className='mt-8 first:mt-0'>
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
-								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
+								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 '>
 									{enlang ? 'SKILLS' : 'VAARDIGHEDEN'}
 								</h2>
 
