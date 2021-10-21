@@ -451,53 +451,29 @@ export default function Home({ lang = 'en' }) {
 									</header>
 									<div className='my-3.2 last:pb-1.5'>
 										<ul className='flex flex-wrap text-md leading-relaxed  -mr-1.6 -mb-1.6'>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Javascript
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												NextJS
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												React
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Node
-											</li>
-
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												MYSQL
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Postgres
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Firebase
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Python
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Django
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Flask
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Dart
-											</li>
-
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Flutter
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Git
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Docker
-											</li>
-											<li className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
-												Linux
-											</li>
+											{[
+												'Javascript',
+												'NextJS',
+												'React',
+												'Node',
+												'MYSQL',
+												'Postgres',
+												'Firebase',
+												'Python',
+												'Django',
+												'Flask',
+												'Dart',
+												'Flutter',
+												'Git',
+												'Docker',
+												'Linux',
+											].map((i) => (
+												<li
+													key={i}
+													className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+													{i}
+												</li>
+											))}
 										</ul>
 									</div>
 								</section>
@@ -511,27 +487,21 @@ export default function Home({ lang = 'en' }) {
 								</header>
 								<div className='my-3.2 last:pb-1.5'>
 									<ul className='flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6'>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											SalesForce
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											Marketing
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											Sales
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											Psychology
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											Adobe Suite
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											CAD
-										</li>
-										<li className='px-2.5 mr-1.6 mb-1.6 text-base text-gray-750  print:bg-white print:border-inset   bg-gray-200'>
-											IELTS 8.0
-										</li>
+										{[
+											'SalesForce',
+											'Marketing',
+											'Sales',
+											'Psychology',
+											'Adobe Suite',
+											'CAD',
+											'IELTS - 8.0',
+										].map((i) => (
+											<li
+												key={i}
+												className='px-2.5  mr-1.6 mb-1.6 text-base text-gray-750    print:bg-white print:border-inset   bg-gray-200'>
+												{i}
+											</li>
+										))}
 									</ul>
 								</div>
 							</section>
