@@ -249,7 +249,7 @@ export default function Home({ lang = 'en' }) {
 										E.J. Rooy Automotive - Krimpen NL
 									</h3>
 									<p className='leading-normal text-md text-gray-650'>
-										Feb 2008– Apr 2017 | Sales Manager
+										Feb 2008 – Jan 2018 | Sales Manager
 									</p>
 								</header>
 								<p className='mt-2.1 text-md text-gray-700 leading-normal'>
@@ -450,14 +450,14 @@ export default function Home({ lang = 'en' }) {
 											</a>
 										</h3>
 										<p className='leading-normal text-md text-gray-650'>
-											2017 - 2018 | Python MYSQL JS
+											2016 - 2018 | Python MYSQL JS
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
 										{enlang
 											? `Automotive Analytic SaaS. Software that scrapes, indexes
 										and processes listing pages of automotive resellers.
-										his data was to be sold to car dealers to help
+										this data was to be sold to car dealers to help
 										identify trends, opportunities and track competitors.`
 											: `Automotive Analytic Saas. Software dat voorraad pagina's van autobedrijven
                     schraapt, indexeert en analyseert. Helpt klanten bij het vinden van trends en het prestaties
