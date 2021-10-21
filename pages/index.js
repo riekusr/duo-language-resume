@@ -6,7 +6,7 @@ import profilePicT from '../public/profiletrans.jpg';
 
 export default function Home({ lang = 'en' }) {
 	console.log(lang);
-	const langs = 'ghey';
+	const enlang = lang == 'en';
 	return (
 		<>
 			<Head>
@@ -19,7 +19,7 @@ export default function Home({ lang = 'en' }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta http-equiv='X-UA-Compatible' content='ie=edge' />
 				{/* <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> --> */}
-				<title>Riekus Ritskes - Resume </title>
+				<title>Riekus Ritskes - {enlang ? 'Resume' : 'CV'} </title>
 			</Head>
 
 			<main className='font-firago hyphens-manual bg-gray-250 print:bg-white pb-12 print:pb-0 '>
@@ -27,7 +27,11 @@ export default function Home({ lang = 'en' }) {
 				<section className='flex flex-row justify-center pb-8 print:pb-0 print:hidden'>
 					<div className='flex flex-row justify-between items-center bg-white text-lg text-gray-550 shadow-xl'>
 						<Link href='/en'>
-							<div className=' px-3 py-1 font-medium cursor-pointer'> en </div>
+							<div
+								className={`
+									px-3 py-1 cursor-pointer ${enlang ? 'font-medium' : ''}	`}>
+								en
+							</div>
 						</Link>
 						<svg
 							onClick={(e) => window.print()}
@@ -44,7 +48,12 @@ export default function Home({ lang = 'en' }) {
 							/>
 						</svg>
 						<Link href='/nl'>
-							<div className='px-3 py-1 cursor-pointer'> nl </div>
+							<div
+								className={`px-3 py-1 cursor-pointer ${
+									enlang ? 'font-medium' : ''
+								}`}>
+								nl
+							</div>
 						</Link>
 					</div>
 				</section>
@@ -73,7 +82,7 @@ export default function Home({ lang = 'en' }) {
 							</h2>
 							{/* <!--Location --> */}
 							<h3 className='m-0 mt-0 font-semibold leading-snug text-md text-gray-550'>
-								Rotterdam, The Netherlands
+								Rotterdam, {enlang ? 'The Netherlands' : 'Nederland'}
 							</h3>
 						</div>
 
@@ -121,8 +130,11 @@ export default function Home({ lang = 'en' }) {
 										</li>
 										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
 											<a href='tel:+31645260830'>
-												<span className='mr-5 text-lg font-semibold text-gray-700  leading-snugish'>
-													Phone:
+												<span
+													className={`${
+														enlang ? 'mr-5' : 'mr-12'
+													} text-lg font-semibold text-gray-700  leading-snugish`}>
+													{enlang ? 'Phone' : 'Tel.'}
 												</span>
 												+31 6 4526 0830
 											</a>
@@ -143,7 +155,7 @@ export default function Home({ lang = 'en' }) {
 										</li>
 										<li className=' leading-normal transition duration-100 ease-in  text-gray-550 text-md hover:text-gray-700'>
 											<span className='mr-9 text-lg font-semibold text-gray-700  leading-snugish'>
-												DOB:
+												{enlang ? 'DOB' : 'GEB'}
 											</span>
 											17-03-1988
 										</li>
@@ -162,19 +174,20 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
 								<h2 className='mb-2 text-lg font-bold tracking-widest text-gray-700  print:font-normal'>
-									SUMMARY
+									{enlang ? 'SUMMARY' : 'SAMENVATTING'}
 								</h2>
 
 								<section className='mb-2 break-inside-avoid'>
 									<p className='mt-2 leading-normal text-gray-700 text-md'>
-										{/* Full stack autodiadact with demonstrable capacity to
-											assess and manage complex business needs and surmount
-											obstacles in the way thereof thus producing refined and
-											accessible work products. */}
-										Self starter with a knack for sales and a skillset in
+										{enlang
+											? `Self starter with a knack for sales and a skillset in 
 										programming and IT. Always learning and progressing with an
 										agile mindset. Looking to break into the Salesforce
-										ecosystem for new challenges.
+										ecosystem for new challenges.`
+											: `Zelf starter met een passie voor sales en programmeer/IT vaardigheden.
+                      Altijd aan het leren en groeien met een Agile mentaliteit. Hard opzoek naar 
+                      een uitdaging in de SalesForce industry. 
+                      `}
 									</p>
 								</section>
 							</div>
@@ -186,7 +199,7 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
 								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
-									EXPERIENCE
+									{enlang ? 'EXPERIENCE' : 'ERVARINGEN'}
 								</h2>
 
 								<section className='mb-4.5 break-inside-avoid'>
@@ -199,14 +212,17 @@ export default function Home({ lang = 'en' }) {
 										</p>
 									</header>
 									<p className='mt-2.1 text-md text-gray-700 leading-normal'>
-										{/* Built doner pork chop &bull; Served salmon, cream soft
-											cheese, and brisket &bull; Acted 55% pork chop &bull;
-											Filled burgdoggen & frankfurter strip steak with 90%
-											burger patties and broth */}
+										{enlang
+											? `
 										Responsible for sales and customer experience at this
 										leading Australian 4x4 brand. Duties consisted of finding
 										new business, upselling existing customers, managing
-										processes and product advising.
+										processes and product advising.`
+											: `
+                      Verantwoordelijk voor de verkoop en klant ervaring bij deze Australische
+                      4x4 marktleider. Taken bestaan uit het werven van klanten, upsell bestaande klanten
+                      en het beheren van (verkoop) systemen. 
+                      `}
 									</p>
 								</section>
 							</div>
@@ -221,13 +237,24 @@ export default function Home({ lang = 'en' }) {
 									</p>
 								</header>
 								<p className='mt-2.1 text-md text-gray-700 leading-normal'>
+									{enlang
+										? `
 									B2B Sales manager responsible for sales targets and 2 sales
-									associates in the wholesale automotive industry.
+									associates in the wholesale automotive industry.`
+										: `B2B Sales manager verantwoordelijk voor de targets van 2 
+                    medewerkers in de auto groothandel industrie.`}
 								</p>
 								<p className='mt-2.1 text-md text-gray-700 leading-normal'>
+									{enlang
+										? `
 									Duties consisted of exploring new business, managing existing
 									key clients and streamlining sales, marketing and
-									communication processes.
+									communication processes.`
+										: `
+                    Taken bestonden uit het vinden van nieuwe klanten, 
+                    beheren van bestaande accounts, het verbeteren van verkoop,
+                    marketing en communicatie processen. 
+                    `}
 								</p>
 							</section>
 
@@ -241,10 +268,17 @@ export default function Home({ lang = 'en' }) {
 									</p>
 								</header>
 								<p className='mt-2.1 text-md text-gray-700 leading-normal'>
+									{enlang
+										? `
 									van Oord is the industry leader in dredging and martime
 									ingenuity. Hired straight out of school for my apprenticeship.
 									Worked on a cutter suction dredger creating the islands of the
-									prestige project 'the world' in Dubai.
+									prestige project 'the world' in Dubai.`
+										: `
+                  Van oord is de industrie leider in bagger en maritieme projecten. Aangenomen 
+                  voor een jaar betaalde stage in Dubai waar we werkten aan het
+                   eilanden project 'De Wereld' met een cutter suction dredger. 
+                  `}
 								</p>
 							</section>
 						</section>
@@ -253,7 +287,7 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --> */}
 							<div className='border-b-2 md:border-none print:border-none break-inside-avoid'>
 								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
-									EDUCATION
+									{enlang ? 'EDUCATION' : 'OPLEIDINGEN'}
 								</h2>
 
 								<section className='mb-4.5 break-inside-avoid'>
@@ -295,7 +329,7 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --> */}
 							<div className='border-b-2 break-inside-avoid'>
 								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
-									PROJECTS
+									{enlang ? 'PROJECTS' : 'PROJECTEN'}
 								</h2>
 
 								<section className='mb-4.5 break-inside-avoid'>
@@ -316,9 +350,15 @@ export default function Home({ lang = 'en' }) {
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
+										{enlang
+											? `
 										A love child of GoFundMe.com and Zapier.com. A platform to
 										raise funds when an actual measurable goal (through vendor
-										API's) is achieved. ** Cancelled **
+										API's) is achieved. ** Cancelled **`
+											: `
+                    De liefdes baby van GoFundMe.com and Zapier.com. Een platform waar je 
+                    conditioneel geld kunt inzamelen dmv API kpopelingen. 
+                    `}
 									</p>
 								</section>
 								{/* </div> */}
@@ -342,7 +382,14 @@ export default function Home({ lang = 'en' }) {
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
 										Hardware product. <br />
-										Ergonomic carbon fiber laptopstand for travelers.
+										{enlang
+											? `
+						
+										Ergonomic carbon fiber laptopstand for travelers.`
+											: `
+                    
+                    Ergonomische laptop standaard voor reizigers. 
+                    `}
 									</p>
 								</section>
 
@@ -360,11 +407,16 @@ export default function Home({ lang = 'en' }) {
 											</a>
 										</h3>
 										<p className='leading-normal text-md text-gray-650'>
-											Since 2018 | JS PSQL
+											2018 - 2020 | JS PSQL
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
-										Notifying Australian Citizens of password & data leaks.
+										{enlang
+											? `
+										Notifying Australian Citizens of password & data leaks.`
+											: `
+                    Brengt Australiërs op de hoogte van data lekken. 
+                    `}
 									</p>
 								</section>
 
@@ -386,10 +438,14 @@ export default function Home({ lang = 'en' }) {
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
-										Automotive Analytics SaaS. Software that scrapes, indexes
+										{enlang
+											? `Automotive Analytics SaaS. Software that scrapes, indexes
 										and processes listing pages of automtoive resellers.
-										<br /> This data was to be sold to car dealers to help
-										identify trends, opportunities and track competitors.
+										his data was to be sold to car dealers to help
+										identify trends, opportunities and track competitors.`
+											: `Automotive Analytics Saas. Software dat voorraad pagina's van autobedrijven
+                    schraapt, indexeert en analyseert. Helpt klanten bij het vinden van trends en het prestaties
+                    van concurrenten`}
 									</p>
 								</section>
 
@@ -411,10 +467,17 @@ export default function Home({ lang = 'en' }) {
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
+										{enlang
+											? `
 										Automotive parts aggregator website. Supplying the Dutch
 										automotive parts ecosystem with used parts from suppliers
 										based in Germany, Poland and Czech. Automated scraping from
-										ebay and relisting on 'marktplaats.nl'.
+										Ebay and relisting on 'Marktplaats.nl'.`
+											: `
+                    Aggregeren van auto onderdelen van buitenlandse aanbieders in Duitsland,
+                    Polen en Tsjechië voor aanbod op o.a. Marktplaats.nl. Geautomatiseerd schrapen 
+                    van Ebay producten. 
+                    `}
 									</p>
 								</section>
 
@@ -428,9 +491,15 @@ export default function Home({ lang = 'en' }) {
 										</p>
 									</header>
 									<p className='mt-1 text-md text-gray-700 leading-normal'>
-										Aspired to be the biggest provider of online DIY repair
-										manuals. Similair to what ifixit.com has become. Moved on
-										due to team inbalances.
+										{enlang
+											? `
+										Platform where DIYers write manuals for repairs, affiliate comission on tools
+                    and parts are shared with the content creators`
+											: `
+                    Platform waar DIY-ers handleidingen kunnen plaatsen voor
+                    reparaties en waar commissies op affiliatie producten worden gedeeld
+                    met de content creators. 
+                    `}
 									</p>
 								</section>
 							</div>
@@ -440,13 +509,13 @@ export default function Home({ lang = 'en' }) {
 							{/* <!-- To keep in the same column --> */}
 							<div className='break-inside-avoid'>
 								<h2 className='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
-									SKILLS
+									{enlang ? 'SKILLS' : 'VAARDIGHEDEN'}
 								</h2>
 
 								<section className='mb-4.5 break-inside-avoid'>
 									<header>
 										<h3 className='text-lg font-semibold leading-snug text-gray-700'>
-											Programming
+											{enlang ? 'Programming' : 'Programeren'}
 										</h3>
 									</header>
 									<div className='my-3.2 last:pb-1.5'>
@@ -482,7 +551,7 @@ export default function Home({ lang = 'en' }) {
 							<section className='mb-4.5 break-inside-avoid'>
 								<header>
 									<h3 className='text-lg font-semibold leading-snug text-gray-700'>
-										Other
+										{enlang ? 'Other' : 'Anders'}
 									</h3>
 								</header>
 								<div className='my-3.2 last:pb-1.5'>
