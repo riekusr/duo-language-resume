@@ -24,7 +24,7 @@ export default function Home() {
 				<main class='font-firago hyphens-manual bg-gray-250 print:bg-white pb-12 print:pb-0 '>
 					{/* <!-- Language and Print Buttons --> */}
 					<section class='flex flex-row justify-center pb-8 print:pb-0 print:hidden'>
-						<div class='flex flex-row justify-between items-center bg-white text-lg text-gray-500 shadow-xl'>
+						<div class='flex flex-row justify-between items-center bg-white text-lg text-gray-550 shadow-xl'>
 							<a href='#'>
 								<div class=' px-3 py-1 font-medium'> en </div>
 							</a>
@@ -164,10 +164,14 @@ export default function Home() {
 
 									<section class='mb-2 break-inside-avoid'>
 										<p class='mt-2 leading-normal text-gray-700 text-md'>
-											Full stack autodiadact with demonstrable capacity to
+											{/* Full stack autodiadact with demonstrable capacity to
 											assess and manage complex business needs and surmount
 											obstacles in the way thereof thus producing refined and
-											accessible work products.
+											accessible work products. */}
+											Self starter with a knack for sales and a skillset in
+											programming and IT. Always learning and progressing with
+											an agile mindset. Looking to break into the Salesforce
+											ecosystem for new challenges.
 										</p>
 									</section>
 								</div>
@@ -244,7 +248,7 @@ export default function Home() {
 
 							<section class='mt-8 first:mt-0'>
 								{/* <!-- To keep in the same column --> */}
-								<div class='border-b-2 md:border-none break-inside-avoid'>
+								<div class='border-b-2 md:border-none print:border-none break-inside-avoid'>
 									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
 										EDUCATION
 									</h2>
@@ -517,42 +521,6 @@ export default function Home() {
 									</div>
 								</section>
 							</section>
-
-							{/* <section class='mt-8 first:mt-0'> */}
-							{/* <!-- To keep in the same column --> */}
-							{/* <div class='break-inside-avoid'>
-									<h2 class='mb-4 font-bold tracking-widest  text-sm2 text-gray-550 print:font-normal'>
-										CONTACT
-									</h2>
-
-									<section class='mb-4.5 break-inside-avoid'>
-										<ul class='list-inside pr-7'>
-											<li class='mt-1.5 leading-normal text-gray-700 text-md'>
-												<a href='//webpraktikos.com' class='group'>
-													webpraktikos.com
-													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-														↗
-													</span>
-												</a>
-											</li>
-											<li class='mt-1.5 leading-normal text-gray-700 text-md'>
-												<a href='//twitter.com/webpraktikos' class='group'>
-													twitter.com/webpraktikos
-													<span class='inline-block font-normal transition duration-100 ease-in  text-gray-550 print:text-black group-hover:text-gray-700'>
-														↗
-													</span>
-												</a>
-											</li>
-											<li class='mt-1.5 leading-normal text-gray-700 text-md'>
-												1020 Wien, Austria
-											</li>
-											<li class='mt-1.5 leading-normal text-gray-700 text-md'>
-												hi@webpraktikos.com
-											</li>
-										</ul>
-									</section>
-								</div>
-							</section> */}
 						</div>
 						{/* <!-- end Column --> */}
 					</div>
