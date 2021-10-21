@@ -14,7 +14,7 @@ export default function Home({ lang = 'en' }) {
 				<meta name='robots' content='noindex' />
 				<meta name='googlebot' content='noindex' />
 				<meta name='description' content='Programming and Sales' />
-				<meta name='keywords' content='resume,cv,Marko' />
+				<meta name='keywords' content='resume,cv,Riekus' />
 				<meta name='author' content='Riekus Ritskes' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<meta http-equiv='X-UA-Compatible' content='ie=edge' />
@@ -369,8 +369,8 @@ export default function Home({ lang = 'en' }) {
 										{enlang
 											? `
 										A love child of GoFundMe.com and Zapier.com. A platform to
-										raise funds when an actual measurable goal (through vendor
-										API's) is achieved. ** Canceled **`
+										raise funds that get released when an actual measurable goal (through 3th party
+										API's) is achieved. **Canceled**`
 											: `
                     De liefdes baby van GoFundMe.com and Zapier.com. Een platform waar je 
                     conditioneel geld kunt inzamelen dmv API kpopelingen. 
