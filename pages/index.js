@@ -313,14 +313,10 @@ export default function Home({ lang = 'en' }) {
                 <p className="mt-2.1 text-md text-gray-700 leading-normal">
                   {enlang
                     ? `
-									van Oord is the industry leader in dredging and maritime
-									ingenuity. Hired straight out of school for my apprenticeship.
 									Worked on a cutter suction dredger creating the islands of the
 									prestige project 'the world' in Dubai.`
                     : `
-                  Van oord is de industrie leider in bagger en maritieme projecten. Aangenomen 
-                  voor een jaar betaalde stage in Dubai waar we werkten aan het
-                   eilanden project 'De Wereld' met een cutter suction dredger. 
+                  In Dubai gewerkt aan het prestige project "The World" eilanden 
                   `}
                 </p>
               </section>
