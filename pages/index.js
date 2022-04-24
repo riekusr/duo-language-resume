@@ -226,7 +226,31 @@ export default function Home({ lang = 'en' }) {
                 <h2 className="mb-4 font-bold tracking-widest text-sm2 text-gray-550 ">
                   {enlang ? 'EXPERIENCE' : 'ERVARINGEN'}
                 </h2>
+                    </div>
 
+                <section className="mb-4.5 break-inside-avoid">
+                  <header>
+                    <h3 className="text-lg font-semibold leading-snug text-gray-700">
+                      Welisa Salesforce Consultancy - Barneveld NL
+                    </h3>
+                    <p className="leading-normal text-md text-gray-650">
+                      Dec 2021 – Present | Consultant & Developer
+                    </p>
+                  </header>
+                  <p className="mt-2.1 text-md text-gray-700 leading-normal">
+                    {enlang
+                      ? `
+										Responsible for sales and customer experience at this
+										leading Australian 4x4 brand. Duties consisted of finding
+										new business, up-selling existing customers, managing
+										processes and product advising.`
+                      : `
+                      Verantwoordelijk voor de verkoop en klant ervaring bij deze Australische
+                      4x4 marktleider. Taken bestaan uit het werven van klanten, upsell bestaande klanten
+                      en het beheren van (verkoop) systemen. 
+                      `}
+                  </p>
+                </section>
                 <section className="mb-4.5 break-inside-avoid">
                   <header>
                     <h3 className="text-lg font-semibold leading-snug text-gray-700">
@@ -250,7 +274,6 @@ export default function Home({ lang = 'en' }) {
                       `}
                   </p>
                 </section>
-              </div>
 
               <section className="mb-4.5 break-inside-avoid">
                 <header>
