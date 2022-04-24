@@ -240,14 +240,9 @@ export default function Home({ lang = 'en' }) {
                   <p className="mt-2.1 text-md text-gray-700 leading-normal">
                     {enlang
                       ? `
-										Responsible for sales and customer experience at this
-										leading Australian 4x4 brand. Duties consisted of finding
-										new business, up-selling existing customers, managing
-										processes and product advising.`
+										Working as functional Consultant and LWC / Apex developer.`
                       : `
-                      Verantwoordelijk voor de verkoop en klant ervaring bij deze Australische
-                      4x4 marktleider. Taken bestaan uit het werven van klanten, upsell bestaande klanten
-                      en het beheren van (verkoop) systemen. 
+                      Werkzaam als functioneel Consultant en LWC / Apex developer. 
                       `}
                   </p>
                 </section>
