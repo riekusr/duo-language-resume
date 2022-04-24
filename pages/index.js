@@ -209,11 +209,9 @@ export default function Home({ lang = 'en' }) {
                     {enlang
                       ? `Self starter with a knack for sales and a skill set in 
 										programming and IT. Always learning and progressing with an
-										agile mindset. Looking to break into the Salesforce
-										ecosystem for new challenges.`
+										agile mindset. Currently focused on Salesforce intergrations.`
                       : `Zelf starter met een passie voor sales en programmeer/IT vaardigheden.
-                      Altijd aan het leren en groeien met een Agile mentaliteit. Hard opzoek naar 
-                      een uitdaging in de SalesForce industry. 
+                      Altijd aan het leren en groeien met een Agile mentaliteit. Momenteel een focus op Salesforce intergraties. 
                       `}
                   </p>
                 </section>
