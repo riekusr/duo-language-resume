@@ -557,7 +557,6 @@ export default function Home({ lang = 'en' }) {
                         'Node',
                         'MYSQL',
                         'Postgres',
-                        'Firebase',
                         'Python',
                         'Django',
                         'Flask',
@@ -566,6 +565,8 @@ export default function Home({ lang = 'en' }) {
                         'Git',
                         'Docker',
                         'Linux',
+                        'LWC',
+                        'Apex',
                       ].map((i) => (
                         <li
                           key={i}
