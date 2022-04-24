@@ -292,7 +292,7 @@ export default function Home({ lang = 'en' }) {
                     ? `
 									`
                     : `
-                    . 
+                    
                     `}
                 </p>
               </section>
