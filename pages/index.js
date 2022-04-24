@@ -290,13 +290,9 @@ export default function Home({ lang = 'en' }) {
                 <p className="mt-2.1 text-md text-gray-700 leading-normal">
                   {enlang
                     ? `
-									Duties consisted of exploring new business, managing existing
-									key clients and streamlining sales, marketing and
-									communication processes.`
+									`
                     : `
-                    Taken bestonden uit het vinden van nieuwe klanten, 
-                    beheren van bestaande accounts, het verbeteren van verkoop,
-                    marketing en communicatie processen. 
+                    . 
                     `}
                 </p>
               </section>
@@ -316,7 +312,7 @@ export default function Home({ lang = 'en' }) {
 									Worked on a cutter suction dredger creating the islands of the
 									prestige project 'the world' in Dubai.`
                     : `
-                  In Dubai gewerkt aan het prestige project "The World" eilanden 
+                  In Dubai gewerkt aan het prestige project "The World" eilanden. 
                   `}
                 </p>
               </section>
