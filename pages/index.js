@@ -84,7 +84,7 @@ export default function Home({ lang = 'en' }) {
               </h1>
               {/* <!--Job Title--> */}
               <h2 className="m-0 text-xl font-semibold leading-snug text-gray-700">
-                Salesforce Consultant & Developer 
+                Managing Consultant & Developer 
               </h2>
               {/* <!--Location --> */}
               <h3 className="m-0 mt-0 font-semibold leading-snug text-md text-gray-550">
